@@ -2689,7 +2689,7 @@ The `whenContainsAll` method invokes the given closure if the string contains al
     use Illuminate\Support\Stringable;
 
     $string = Str::of('tony stark')
-                    ->whenContainsAll(['tony', 'stark'], function (Stringable $string) {
+                ->whenContainsAll(['tony', 'stark'], function (Stringable $string) {
                         return $string->title();
                     });
 
